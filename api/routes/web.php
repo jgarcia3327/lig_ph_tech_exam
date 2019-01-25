@@ -20,9 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // POST Encounter error 419. See https://laracasts.com/discuss/channels/laravel/post-request-in-laravel-57-error-419-sorry-your-session-has-expired
-//Route::post('/api/register', 'APIController@register'); 
+//Route::post('/api/register', 'APIController@register'); // Will be used once the 419 issue is fixed.
 Route::get('/api/register', 'APIController@register'); // Temp
-//Route::post('/api/login', 'APIController@login');
+//Route::post('/api/login', 'APIController@login'); // Will be used once the 419 issue is fixed.
 Route::get('/api/login', 'APIController@login'); // Temp
 
 
